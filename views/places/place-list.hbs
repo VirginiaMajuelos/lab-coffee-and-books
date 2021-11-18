@@ -1,0 +1,17 @@
+<a class="btn btn-primary" href="/" role="button">Back</a><br><br>
+
+<h1>Places</h1> <hr>
+
+<ul>
+    {{#each allPlaces}}
+        <li>Name: {{name}} <br> Type: {{type}}<br>
+        <a href="/places/{{_id}}/delete">Delete</a>
+        <a href="/places/place-edit/{{_id}}">Edit</a>
+        </li>
+
+    
+    {{/each}}
+
+</ul>
+
+<a class="btn btn-primary" href="/places/create" role="button">New place</a><br><br>
